@@ -23,12 +23,19 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cadastro',
+    'inventario',
+    'movimentacao',
+    'relatorios',
 ]
 
 MIDDLEWARE = [
@@ -39,6 +46,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'cadastro.middleware.CurrentUserMiddleware',
+    'inventario.middleware.CurrentUserMiddleware',
+    'movimentacao.middleware.CurrentUserMiddleware',
+    'relatorios.middleware.CurrentUserMiddleware',
 ]
 
 ROOT_URLCONF = 'setup.urls'
