@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'cadastro',
     'inventario',
     'movimentacao',
-    'relatorios',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +48,6 @@ MIDDLEWARE = [
     'cadastro.middleware.CurrentUserMiddleware',
     'inventario.middleware.CurrentUserMiddleware',
     'movimentacao.middleware.CurrentUserMiddleware',
-    'relatorios.middleware.CurrentUserMiddleware',
 ]
 
 ROOT_URLCONF = 'setup.urls'
