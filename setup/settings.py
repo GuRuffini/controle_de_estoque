@@ -132,3 +132,25 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "CDE",
+
+    "site_header": "CDE",
+
+    "site_brand": "CDE",
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+    },
+
+    "welcome_sign": "Bem vindo ao CDE",
+
+    "copyright": "CDE LTDA",
+
+    # "search_model": ["calibracao.ControleEquipamento",],
+
+    # "show_ui_builder": "True",
+}
