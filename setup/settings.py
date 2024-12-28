@@ -142,13 +142,20 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
+        "cadastro.Produto": "fas fa-tags",
+        "cadastro.Fornecedor": "fas fa-truck",
+        "cadastro.LocalArmazenamento": "fas fa-box",
+        "cadastro.CentroDistribuicao": "fas fa-warehouse",
+        "cadastro.Profissional": "fas fa-user-tie",
     },
 
     "welcome_sign": "Bem vindo ao CDE",
 
     "copyright": "CDE LTDA",
 
-    # "search_model": ["calibracao.ControleEquipamento",],
+    "search_model": [
+        "cadastro.Produto",
+    ],
 
     # "show_ui_builder": "True",
 }
